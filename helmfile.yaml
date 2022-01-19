@@ -1,11 +1,12 @@
 repositories:
 - name: test-app-chart
-  url: ghcr.io/pspurlock/library
+  url: ghcr.io/pspurlock07/test-app:0.1.0
+  oci: true
 
 releases:
 - name: test-app-chart
   namespace: {{ .Values.namespace }}
   chart: test-app-chart/test-app
-  version: 4.1.4
+  version: 0.1.0
   values:
   - values/test-app.yaml.gotmpl
