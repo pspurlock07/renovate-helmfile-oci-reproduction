@@ -1,6 +1,6 @@
 repositories:
 - name: test-app-chart
-  url: ghcr.io/pspurlock07/test-app:0.1.0
+  url: ghcr.io/pspurlock07/test-app
   oci: true
 
 releases:
