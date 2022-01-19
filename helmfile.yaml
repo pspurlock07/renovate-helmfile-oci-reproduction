@@ -1,6 +1,6 @@
 repositories:
 - name: test-app-chart
-  url: ghcr.io/pspurlock07/test-app
+  url: ghcr.io/pspurlock07
   oci: true
 
 releases:
@@ -10,3 +10,9 @@ releases:
   version: 0.1.0
   values:
   - values/test-app.yaml.gotmpl
+
+
+environments:
+  default:
+    values:
+      - namespace: edge
